@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>تقویم چندگانه</title>
+  <title>گاه شمار چندگانه</title>
   <style>
     :root{
       --bg1:#0b1220; --bg2:#070b13;
@@ -102,7 +102,7 @@
   <div class="wrap">
     <div class="header">
       <div class="brand">
-        <div class="t1">تقویم چندگانه</div>
+        <div class="t1">گاه شمار چندگانه</div>
         <div class="t2">شاهنشاهی • هجری شمسی • هجری قمری • میلادی</div>
       </div>
       <div class="pill"><span class="dot"></span><span id="nowClock" class="mono">--:--</span></div>
@@ -123,14 +123,14 @@
       <div class="grid">
         <!-- Jalali -->
         <div class="box">
-          <h3>تقویم هجری شمسی <span class="tag">Jalali</span></h3>
+          <h3>گاه شمار هجری شمسی <span class="tag">Jalali</span></h3>
           <div id="jalaliDate" class="val mono">--/--/----</div>
           <div id="jalaliLine" class="desc">---</div>
         </div>
 
         <!-- Hijri -->
         <div class="box">
-          <h3>تقویم هجری قمری <span class="tag">Hijri</span></h3>
+          <h3>گاه شمار هجری قمری <span class="tag">Hijri</span></h3>
           <div id="hijriDate" class="val mono">--/--/----</div>
           <div id="hijriLineFa" class="desc"></div>
           <div id="hijriLineAr" class="desc"></div>
@@ -138,7 +138,7 @@
 
         <!-- Gregorian -->
         <div class="box">
-          <h3>تقویم میلادی <span class="tag">Gregorian</span></h3>
+          <h3>گاه شمار میلادی <span class="tag">Gregorian</span></h3>
           <div id="gregDateFa" class="val mono">--/--/----</div>
           <div id="gregLineFa" class="desc"></div>
           <div id="gregLineEn" class="desc"></div>
@@ -274,7 +274,7 @@
           `<span class="ar">${wdFa} - ${hd} / ${hm} / ${hy} (قمری)</span>`;
       } else {
         document.getElementById("hijriDate").textContent = "پشتیبانی نشد";
-        document.getElementById("hijriLineFa").textContent = "مرورگر شما تقویم قمری را پشتیبانی نمی‌کند.";
+        document.getElementById("hijriLineFa").textContent = "مرورگر شما گاه شمار قمری را پشتیبانی نمی‌کند.";
       }
 
       const hijriAr = getHijriArabicLong(dateObj);
