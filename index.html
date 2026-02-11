@@ -167,7 +167,15 @@
     const joinDMY = (d,m,y) => `${pad2(d)}/${pad2(m)}/${y}`; // DD/MM/YYYY
 
     const jalaliMonths = ["","فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"];
-    const weekdaysFa = ["یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه","شنبه"]; // JS 0..6
+    const weekdaysFa = [
+  "یکشنبه (مهرشید)",      // Sunday - خورشید
+  "دوشنبه (ماه‌شید)",     // Monday - ماه
+  "سه‌شنبه (بهرام‌شید)",  // Tuesday - مریخ
+  "چهارشنبه (تیرشید)",    // Wednesday - عطارد
+  "پنجشنبه (اورمزدشید)",  // Thursday - مشتری
+  "جمعه (ناهیدشید)",      // Friday - زهره
+  "شنبه (کیوان‌شید)"      // Saturday - زحل
+]; // JS 0..6
     const weekdaysEn = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
     // ---------- Gregorian -> Jalali ----------
